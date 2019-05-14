@@ -1,0 +1,82 @@
+@font-face {
+  font-family: 'Moderat-Regular';
+  src: url('../fonts/Moderat-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Moderat-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/Moderat-Regular.eot')  format('eot'), /* IE */
+        url('../fonts/Moderat-Regular.ttf')  format('ttf'); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: "Moderat-Bold";
+  src: url('../fonts/Moderat-Bold.woff2') format('woff2'),
+       url('../fonts/Moderat-Bold.woff') format('woff'),
+       url('../fonts/Moderat-Bold.eot')  format('eot');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background-color: #fff;
+  font-family: 'Moderat-Regular';
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  z-index: 0;
+}
+
+h1 {
+  font-family: 'Moderat-Regular';
+  font-weight: 400;
+  font-size: 2em;
+  color: #000000;
+  line-height: 1.2;
+}
+
+.wrapper {
+  padding: 0 10%;
+}
+
+.view-height {
+  height: 100vh;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 120px;
+  margin-bottom: 64px;
+}
+
+.navigation a {
+  margin-left: 40px;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  padding-bottom: 4px;
+  font-size: 1em;
+  height: 20px;
+  color: #282c34;
+}
+
+.navigation a:hover {
+  border-bottom: 1px solid #2f50fd;
+}
+
+.intro {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 260px;
+}
